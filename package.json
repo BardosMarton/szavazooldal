@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BardosMarton/szavazooldal/issues"
   },
-  "homepage": "https://github.com/BardosMarton/szavazooldal#readme"
+  "homepage": "https://github.com/BardosMarton/szavazooldal#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
