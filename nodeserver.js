@@ -41,7 +41,13 @@ app.post("/szavazas", function(request, response) {
         }
     });
     
-    response.redirect('/');
+    response.redirect('/eredmeny.html');
+});
+
+app.get('/eredmenyek', function(req, res) {
+    model.find({}, function(error, dokumentumok) {
+        res.send(dokumentumok);
+    });
 });
 
 app.listen(9000);
